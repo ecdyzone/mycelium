@@ -1,8 +1,10 @@
-# Yggdrasil 2
+# arvoreIB
 
-O Yggrasil é o sistema oficial para gerenciamento da graduação do aluno do BCC do IME-USP, contendo informações de todas as trilhas e maioria das disciplinas optativas do MAC.
+> O arvoreIB é um fork do Yggdrasil, apenas adaptado para diferentes disciplinas.
 
-Ele também gera o relatório de provável formando oficial do BCC, a ser entregue na seção de alunos.
+O arvoreIB é um sistema não-oficial para gerenciamento da graduação do aluno do IB-USP, contendo informações das disciplinas obrigatórias, optativas eletivas e optativas livres do bacharelado e da licenciatura
+
+> Ele também gera o relatório de provável formando oficial do BCC, a ser entregue na seção de alunos.
 
 ## Como contribuir
 
@@ -24,10 +26,10 @@ Caso alguma matéria nova seja adicionada ao sistema, após adicioná-la no arqu
 
 ### Crawler
 
-O arquivo `jupiterCrawl.js`é um crawler que irá carregar todas as matérias que fazem parte das trilhas (inclusive as obrigatórias) e buscará informações sobre elas no Jupiter: nome, créditos, ementa e pré-requisitos. Essas informações são salvas em um arquivo`allclasses.json`que é usado pelo sistema. Esse crawler deve ser rodado (`npm run crawler`) sempre que uma nova matéria é adicionada ao Yggdrasil, e também idealmente a cada começo de semestre para pegar updates que acontecem nas matérias ao longo do ano.
+O arquivo `jupiterCrawl.js`é um crawler que irá carregar todas as matérias que fazem parte das trilhas (inclusive as obrigatórias) e buscará informações sobre elas no Jupiter: nome, créditos, ementa e pré-requisitos. Essas informações são salvas em um arquivo`allclasses.json`que é usado pelo sistema. Esse crawler deve ser rodado (`npm run crawler`) sempre que uma nova matéria é adicionada à arvoreIB, e também idealmente a cada começo de semestre para pegar updates que acontecem nas matérias ao longo do ano.
 
 O crawler demora um pouco pra rodar e gasta bastante CPU. Após usá-lo, é necessário refazer o deploy do projeto.
 
 ### Enviando modificações
 
-Para fazer qualquer modificação nas trilhas ou matérias, realize um fork do projeto no GitHub, modifique como quiser e abra um PR (pull request) para o repositório principal do Yggdrasil. Caso o PR seja aprovado, as mudanças serão incorporadas no site.
+Para fazer qualquer modificação nas trilhas ou matérias, realize um fork do projeto no GitHub, modifique como quiser e abra um PR (pull request) para o repositório principal do arvoreIB. Caso o PR seja aprovado, as mudanças serão incorporadas no site.

@@ -41,3 +41,7 @@ yarn-error.log*
 tsconfig.tsbuildinfo
 # Local Netlify folder
 .netlify
+
+
+# vim editing files
+*.swp
