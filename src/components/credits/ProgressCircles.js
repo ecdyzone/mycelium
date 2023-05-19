@@ -18,10 +18,18 @@ const palettes = {
     secondary: '#5E2CA5',
     tertiary: '#A463F2',
   },
+// TODO - add green colors
+  // green: {
+  //   primary: '#000000',
+  //   secondary: '#000000',
+  //   tertiary: '#000000',
+  // },
 };
 
 const ProgressCircles = ({ mandatory, elective, free, palette }) => {
   const colorPalette = palette ? palettes[palette] : palettes.blue;
+// TODO - activate green colors
+  // const colorPalette = palette ? palettes[palette] : palettes.green;
 
   return (
     <div className="relative w-100">

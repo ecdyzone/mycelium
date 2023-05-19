@@ -9,6 +9,10 @@ const teoria = require('./src/tracks/teoria').default
 const escience = require('./src/tracks/escience').default
 const sistemas = require('./src/tracks/sistemas').default
 const ia = require('./src/tracks/ia').default
+// TODO - add bio tracks
+// const bio = require('./src/tracks/bio/file.js').default
+
+
 
 const grabClassesFromBoxes = boxes =>
   boxes.reduce((acc, cur) => [...acc, ...cur.classes], [])
@@ -27,6 +31,8 @@ const grabClassesFromTrack = track => [
       ...grabClassesFromTrack(escience),
       ...grabClassesFromTrack(sistemas),
       ...grabClassesFromTrack(ia),
+      // TODO - add bio tracks
+      // ...grabClassesFromTrack(bio),
     ])
   )
 
