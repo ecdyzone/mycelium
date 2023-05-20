@@ -6,7 +6,7 @@ import ia from '../../tracks/ia'
 import escience from '../../tracks/escience'
 import teoria from '../../tracks/teoria'
 // TODO - add bio tracks
-import nucleobasico from '../../tracks/bio/nucleobasico'
+import nucleobasico from '../../tracks/nucleobasico'
 
 const ClassesContainer = () => {
   return (
