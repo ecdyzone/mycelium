@@ -15,6 +15,15 @@ src/components/credits/TrackStatus.js:  const validEscience = validateTrack(esci
 
 
 
+> grep -r escience -l
+jupiterCrawl.js
+src/tracks/escience.js
+src/components/report/ReportTracks.js
+src/components/classes/ClassesContainer.js
+src/components/credits/TrackStatus.js
+
+
+
 
 # useful reusable code blocks
 
@@ -33,3 +42,9 @@ src/components/credits/TrackStatus.js:  const validEscience = validateTrack(esci
 TODO: adicionar as que não tão no programa, como a da tati e do lahr
 
 talvez mudar o addingId pra algo unique, com o mesmo nome do title?
+
+
+
+## icons
+
+change icons to something more bio-icons. insects, plants, etc

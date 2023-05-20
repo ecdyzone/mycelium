@@ -11,6 +11,7 @@ const sistemas = require('./src/tracks/sistemas').default
 const ia = require('./src/tracks/ia').default
 // TODO - add bio tracks
 // const bio = require('./src/tracks/bio/file.js').default
+const nucleobasico = require('./src/tracks/bio/nucleobasico.js')
 
 
 
@@ -33,6 +34,7 @@ const grabClassesFromTrack = track => [
       ...grabClassesFromTrack(ia),
       // TODO - add bio tracks
       // ...grabClassesFromTrack(bio),
+      ...grabClassesFromTrack(nucleobasico),
     ])
   )
 

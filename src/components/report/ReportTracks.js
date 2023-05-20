@@ -5,6 +5,8 @@ import teoria from '../../tracks/teoria'
 import sistemas from '../../tracks/sistemas'
 import escience from '../../tracks/escience'
 import ia from '../../tracks/ia'
+// TODO  - add biotracks.js that need validation
+import bacharelado-eletivas from '../../tracks/bio/bacharelado-eletivas'
 import { validateTrack } from '../../definitions/validation'
 
 const ReportTracks = ({ doneClasses, customBoxClasses }) => {
@@ -12,6 +14,8 @@ const ReportTracks = ({ doneClasses, customBoxClasses }) => {
   const validSistemas = validateTrack(sistemas, doneClasses, customBoxClasses)
   const validEscience = validateTrack(escience, doneClasses, customBoxClasses)
   const validIa = validateTrack(ia, doneClasses, customBoxClasses)
+// TODO  - add biotracks.js that need validation
+  const validBacharelado-eletivas = validateTrack(bacharelado-eletivas, doneClasses, customBoxClasses)
 
   return (
     <div className="f6">
@@ -20,6 +24,9 @@ const ReportTracks = ({ doneClasses, customBoxClasses }) => {
       {validSistemas && <div>- Sistemas de Software</div>}
       {validIa && <div>- Inteligência Artificial</div>}
       {validEscience && <div>- Ciência de Dados</div>}
+// TODO  - add biotracks.js that need validation
+      {validBacharelado-eletivas && <div>- Bacharelado Eletivas</div>}
+
     </div>
   )
 }

@@ -5,6 +5,8 @@ import sistemas from '../../tracks/sistemas'
 import ia from '../../tracks/ia'
 import escience from '../../tracks/escience'
 import teoria from '../../tracks/teoria'
+// TODO - add bio tracks
+import nucleobasico from '../../tracks/bio/nucleobasico'
 
 const ClassesContainer = () => {
   return (
@@ -13,6 +15,13 @@ const ClassesContainer = () => {
         title="Geral"
         colors={['dark-blue', 'bg-light-blue']}
         rules={geral}
+        shouldStartOpen
+      />
+      // TODO - add bio tracks
+      <Track
+        title="Nucleo Básico"
+        colors={['dark-green', 'bg-light-green']}
+        rules={nucleobasico}
         shouldStartOpen
       />
       <Track
