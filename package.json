@@ -1,7 +1,7 @@
 {
-  "name": "yggdrasil",
+  "name": "arvoreIB",
   "version": "1.0.0",
-  "homepage": "http://akafts.github.io/yggdrasil2",
+  "homepage": "http://mumaral.github.io/arvoreIB",
   "description": "Gerenciador do BCC",
   "private": true,
   "scripts": {
