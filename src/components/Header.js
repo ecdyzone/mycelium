@@ -6,7 +6,7 @@ const Header = () => {
       <img
         src="poring.gif"
         className="flex-none mr4"
-        style={{ height: '3rem' }}
+        style={{ height: '3.5rem' }}
       />
       <div>
         <span className="f2 b dark-green">arvoreIB</span>

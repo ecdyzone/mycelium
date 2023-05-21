@@ -70,7 +70,7 @@ BMM0290
 (BIZ 0305) Biologia do desenvolvimento (5.1) 
 
 - Interdepartamental: 
-(041.0301) Diversificação e Biogeografia da Biota Neotropical (4.1) 
+(041 0301) Diversificação e Biogeografia da Biota Neotropical (4.1) 
 adicionar as que não tão no programa, como a da tati, e dizer que qualquer outra vale, aqui são só as que tem reserva pro IB
 
 34 créditos/aula
@@ -193,9 +193,9 @@ Psicologia da Educação (4.1) (Obs.: Deste grupo os alunos devem cursar uma ún
 20 h) 
 
 Oferecidas pelo IB-USP: 
-(041.0200) Atividades Teórico-Práticas em Ensino de Biologia (ATPEB=200 h) 
-(041.0517) Estágio Supervisionado em Ensino de Biologia (4.3) (E=50 h) (PCC=50 h.) 
-(041.0514) Estágio com Pesquisa em Ensino de Biologia (4.3) (E=50 h) (PCC=50 h.) 
+(041 0200) Atividades Teórico-Práticas em Ensino de Biologia (ATPEB=200 h) 
+(041 0517) Estágio Supervisionado em Ensino de Biologia (4.3) (E=50 h) (PCC=50 h.) 
+(041 0514) Estágio com Pesquisa em Ensino de Biologia (4.3) (E=50 h) (PCC=50 h.) 
 
 Oferecidas por outras unidades: 
 (HEP 0142) Epidemiologia (2.0) 
@@ -205,9 +205,9 @@ minimo de 20 creditos aula
 (EDF 0285) Introdução aos Estudos da Educação: Enfoque Filosófico (4.0) (PCC=20h.) 
 (EDF 0287) Introdução aos Estudos da Educação: Enfoque Histórico – (4.0) (PCC=20h.)  
 (EDF 0289) Introdução aos Estudos da Educação: Enfoque Sociológico – (4.0) (PCC=20h.) 
-(041.0111) Estratégias e Instrumentos Educacionais para o Ensino de Ciências e Biologia (4.2) (PCC=45 h.) 
-(041.0404) Ensino por Investigação e Natureza da Ciência (4.1) 
-(041.0405) Educação Inclusiva e Ensino de Ciências (4.2) 
+(041 0111) Estratégias e Instrumentos Educacionais para o Ensino de Ciências e Biologia (4.2) (PCC=45 h.) 
+(041 0404) Ensino por Investigação e Natureza da Ciência (4.1) 
+(041 0405) Educação Inclusiva e Ensino de Ciências (4.2) 
 (BIB 0317) Estratégias e recursos para o ensino de botânica (4.1) (PCC=90h) 
 (BIB 0451) Botânica para a Educação Básica (2.1) (PCC=8 h.) 
 (BIB 0443) Teoria e prática de educação ambiental em unidades de conservação marinhas (  6.0) (PCC=45h) 

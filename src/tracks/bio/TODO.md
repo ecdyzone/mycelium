@@ -94,3 +94,11 @@ ir no children children
 
 dizer que peguei as disciplinas do projeto pedagógico 2021
 disponível em: https://graduacao.ib.usp.br/images/PPP/Projeto_Pedagogico_V01-2021_1.pdf
+
+
+# endings
+
+- correct credits/copyright in footer.js
+    - afafts
+    - bulbasaur images
+- license
