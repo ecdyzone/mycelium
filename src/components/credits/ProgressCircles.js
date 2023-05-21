@@ -18,16 +18,16 @@ const palettes = {
     secondary: '#5E2CA5',
     tertiary: '#A463F2',
   },
-// TODO - add green colors
-  // green: {
-  //   primary: '#000000',
-  //   secondary: '#000000',
-  //   tertiary: '#000000',
-  // },
+// TODO - define green colors
+  green: {
+    primary: '#137752',
+    secondary: '#19a974',
+    tertiary: '#9eebcf',
+  },
 };
 
 const ProgressCircles = ({ mandatory, elective, free, palette }) => {
-  const colorPalette = palette ? palettes[palette] : palettes.blue;
+  const colorPalette = palette ? palettes[palette] : palettes.green;
 // TODO - activate green colors
   // const colorPalette = palette ? palettes[palette] : palettes.green;
 
