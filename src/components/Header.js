@@ -10,7 +10,7 @@ const Header = () => {
       />
       <div>
         <span className="f2 b dark-green">mycelium</span>
-        <span className="f2 b green ml1 relative" style={{ top: '0.5rem' }}>IB</span>
+        <span className="f2 b green ml2 relative" style={{ top: '0.75rem' }}>IB</span>
       </div>
       <img
         src="amoonguss.png"

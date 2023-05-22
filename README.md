@@ -2,9 +2,9 @@
 
 > O Mycelium é um fork do Yggdrasil, apenas adaptado para diferentes disciplinas.
 
-O Mycelium é um sistema não-oficial para gerenciamento da graduação do aluno do IB-USP, contendo informações das disciplinas obrigatórias, optativas eletivas e optativas livres do bacharelado e da licenciatura
+O Mycelium é um sistema não-oficial para gerenciamento da graduação do aluno do IB-USP, contendo informações das disciplinas obrigatórias, optativas eletivas e optativas livres do bacharelado e da licenciatura.
 
-> Ele também gera o relatório de provável formando oficial do BCC, a ser entregue na seção de alunos.
+Ele também gera o relatório de provável formando, ao se completarem os créditos necessários.
 
 ## Como contribuir
 
@@ -13,6 +13,17 @@ O Mycelium é um sistema não-oficial para gerenciamento da graduação do aluno
 Basta clonar o repositório, instalar as dependências com `npm install` e depois ligar o servidor com `npm start`. Você precisa ter o Node.js instalado para que esses comandos funcionem. Depois disso, basta entrar em `localhost:3000` no seu browser.
 
 A versão ideal do Node.js para rodar os comandos é a v8. Utilize o utilitário `nvm` para trocar facilmente entre versões.
+
+Exemplo de script:
+```bash
+git clone http://mumaral.github.io/mycelium mycelium
+cd mycelium
+node -v && npm -v # garanta que nodejs e npm estejam instalados
+npm install
+npm run build
+npm start
+firefox localhost:3000
+```
 
 ### Modificar trilhas
 
