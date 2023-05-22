@@ -92,7 +92,7 @@ class Report extends Component {
           {obs}
         </div>
         <span className="f7 gray">
-          Relatório gerado pelo sistema Yggdrasil2
+          Relatório gerado pelo sistema Mycelium
         </span>
       </div>
     );

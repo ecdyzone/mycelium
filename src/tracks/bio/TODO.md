@@ -137,6 +137,8 @@ disponível em: https://graduacao.ib.usp.br/images/PPP/Projeto_Pedagogico_V01-20
 # commands in order
 
 npm install
+sed -i 's/Yggdrasil2/mycelium/g' src/components/report/Report.js src/components/report/ReportManager.js
+sed -i 's/Yggdrasil/mycelium/g' src/components/report/Report.js src/components/report/ReportManager.js
 grep -r blue jupiterCrawl.js next.config.js next-env.d.ts package.json package-lock.json pages public src tsconfig.json -l | xargs | pbcopy
 sed -i 's/blue/green/g' $(pbpaste)
 npm run build

@@ -130,7 +130,7 @@ class ReportManager extends Component {
                     className="br3 ba b--moon-gray mid-gray pa2 outline-0"
                     rows={5}
                     name="obs"
-                    placeholder="Utilize este espaço para falar de equivalências ou outros pontos da sua graduação que o Yggdrasil não cobre automaticamente"
+                    placeholder="Utilize este espaço para falar de equivalências ou outros pontos da sua graduação que o Mycelium não cobre automaticamente"
                     value={obs}
                     onChange={this.handleChange}
                   />
