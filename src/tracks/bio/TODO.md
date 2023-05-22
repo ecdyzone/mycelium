@@ -74,12 +74,35 @@ mycelium amoonguss icon
 https://m.bulbapedia.bulbagarden.net/wiki/File:Spr_5b_591.png
 https://m.archives.bulbagarden.net/wiki/Category:Amoonguss
 
+to revert icon
+style css - transform: scaleX(-1)
+mas deu erro no nextjs
+https://nextjs.org/blog/styling-next-with-styled-jsx
+uma opção pode ser inverter a imagem mesmo a upar as duas na pasta public
+
+outra pode ser automatizar um sed pra adicionar o transform: scaleX(-1) no .next/server/pages/index.html
+`sed -i 's#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem"/></header>#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem; transform: scaleX(-1)"/></header>#g' .next/server/pages/index.html`
+
+Testes
+```js
+style={{ height: '5rem',  transform: scaleX(-1) }}
+
+// OR
+classname = reverseicon
+  <style jsx>{`
+  .reverseicon {
+    transform: scaleX(-1);
+  }
+      `}</style>
+```
+
+
 
 
 ## colors
 
 
-grep -r blue * (except node_modules) -l | pbcopy
+grep -r blue jupiterCrawl.js next.config.js next-env.d.ts package.json package-lock.json pages public src tsconfig.json -l | xargs | pbcopy
 sed -i 's/blue/green/g' $(pbpaste)
 
 this will break some things like blue pallete definitions. Be aware. (i.e.: ProgressCircles.js has a blue palette definition)
@@ -110,3 +133,12 @@ disponível em: https://graduacao.ib.usp.br/images/PPP/Projeto_Pedagogico_V01-20
     - afafts
     - bulbasaur images
 - license
+
+# commands in order
+
+npm install
+grep -r blue jupiterCrawl.js next.config.js next-env.d.ts package.json package-lock.json pages public src tsconfig.json -l | xargs | pbcopy
+sed -i 's/blue/green/g' $(pbpaste)
+npm run build
+sed -i 's#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem"/></header>#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem; transform: scaleX(-1)"/></header>#g' .next/server/pages/index.html
+npm start
