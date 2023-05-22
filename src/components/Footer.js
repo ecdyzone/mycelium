@@ -12,7 +12,7 @@ const Footer = () => {
       <a
         className="pointer mid-gray hover-dark-gray f3 ml3"
         target="_blank"
-        href="https://www.github.com/mumaral/arvoreIB"
+        href="https://www.github.com/mumaral/mycelium"
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>

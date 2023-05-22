@@ -1,7 +1,7 @@
 {
-  "name": "arvoreIB",
+  "name": "mycelium",
   "version": "1.0.0",
-  "homepage": "http://mumaral.github.io/arvoreIB",
+  "homepage": "http://mumaral.github.io/mycelium",
   "description": "Gerenciador do BCC",
   "private": true,
   "scripts": {

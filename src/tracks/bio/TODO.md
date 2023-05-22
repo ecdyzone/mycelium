@@ -53,7 +53,7 @@ bulbapedia img arquive - 24x24.gif
 in v0.1 try all courses with custom.gif
 
 
-Change Header site to arvoreIB
+Change Header site to mycelium
 
 
 
@@ -66,6 +66,14 @@ convert -size 195x200 temp.gif -resize 39x40 smaller.gif
 
 maybe change to sudowoodo or torterra, fro the tree
 get gif of gameboy in bulbapedia?
+
+
+
+mycelium amoonguss icon
+
+https://m.bulbapedia.bulbagarden.net/wiki/File:Spr_5b_591.png
+https://m.archives.bulbagarden.net/wiki/Category:Amoonguss
+
 
 
 ## colors
