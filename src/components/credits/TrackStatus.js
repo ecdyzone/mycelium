@@ -8,7 +8,7 @@ import sistemas from '../../tracks/sistemas'
 import escience from '../../tracks/escience'
 import ia from '../../tracks/ia'
 // TODO - add bio tracks
-// import bacharelado-eletivas from '../../tracks/bio/bacharelado-eletivas'
+// import bachareladoeletivas from '../../tracks/bachareladoeletivas'
 import { validateTrack } from '../../definitions/validation'
 
 const TrackStatus = ({ doneClasses, customBoxClasses }) => {
@@ -17,7 +17,7 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
   const validEscience = validateTrack(escience, doneClasses, customBoxClasses)
   const validIa = validateTrack(ia, doneClasses, customBoxClasses)
   // TODO - add bio tracks
-  // const validBacharelado-eletivas = validateTrack(bacharelado-eletivas, doneClasses, customBoxClasses)
+  // const validBachareladoeletivas = validateTrack(bachareladoeletivas, doneClasses, customBoxClasses)
 
   return (
     <React.Fragment>

@@ -7,7 +7,6 @@ export default {
     left: [
       {
         title: 'Obrigatórias',
-        // classeType: ClasseTypes.MANDATORY,
         classes: [
           '0410513',
         ],
