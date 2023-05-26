@@ -1,0 +1,6 @@
+﻿{"evolution":
+    {"doneClasses": ["4302112","MAT0122","MAC0110","MAT0112","MAE0515","MAC0121","MAC0328","MAC0325","MAC0346","MAC0332","MAC0219","MAC0344","MAC0426","MAC0470","MAC0467","fasd"], 
+     "doingClasses":["MAE0499","QBQ0104","QBQ1252"],
+     "scheduledClasses":[]
+    },
+"classes":{"customClasses":{"others":[{"code":"FASD","name":"asfd","credits":"2","wcredits":"2","custom":true,"dependencies":[],"summary":""}]},"customCredits":[]},"electives":["QBQ1252"]}
