@@ -1,0 +1,10 @@
+{"version":7,"identifier":"minhagrade","plans":[
+    {"activeCombinationIndex":0,"name":"Plano 1","colors":[1,1,1,1,1,1,1,0,0,0,0,0,0],"lectures":[
+        {"code":"BIF0214","color":0,"selected":true,"classrooms":["2023101","2023102"]},
+        {"code":"BIE0213","color":1,"selected":true,"classrooms":["2023101+11","2023102+12"]},
+        {"code":"BIF0217","color":2,"selected":true,"classrooms":["2023101+11","2023102+12"]},
+        {"code":"BIZ0213","color":3,"selected":true,"classrooms":["2023101+11","2023102+12"]},
+        {"code":"BIO0205","color":4,"selected":true,"classrooms":["2023101+11","2023102+12"]},
+        {"code":"BIB0145","color":5,"selected":true,"classrooms":["2023101+11","2023102+12"]},
+        {"code":"BIO0207","color":6,"selected":true,"classrooms":["2023101","2023102"]}
+    ]}],"activePlanIndex":0}
