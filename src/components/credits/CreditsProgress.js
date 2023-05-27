@@ -20,9 +20,9 @@ class CreditsProgress extends Component {
       colors,
     } = this.props
 
-    const primaryColor = colors ? colors.primary : 'dark-blue'
-    const secondaryColor = colors ? colors.secondary : 'blue'
-    const tertiaryColor = colors ? colors.tertiary : 'light-blue'
+    const primaryColor = colors ? colors.primary : 'dark-green'
+    const secondaryColor = colors ? colors.secondary : 'green'
+    const tertiaryColor = colors ? colors.tertiary : 'light-green'
 
     return (
       <div className="flex items-center">

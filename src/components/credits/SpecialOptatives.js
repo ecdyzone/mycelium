@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 const SpecialOptatives = ({ statisticsOptative, scienceOptative, color }) => {
-  const checkColor = color || 'blue'
+  const checkColor = color || 'green'
 
   return (
     <React.Fragment>

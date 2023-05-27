@@ -64,7 +64,7 @@ class ElectivesManager extends Component {
             <CreditsManager doneClasses={doneClasses}>
               {({ statisticsOptative, scienceOptative }) => (
                 <React.Fragment>
-                  <div className="f4 fw6 mb4 dark-blue">
+                  <div className="f4 fw6 mb4 dark-green">
                     Gerenciar Optativas
                   </div>
                   <div className="gray tc fw5 mb4">
@@ -84,7 +84,7 @@ class ElectivesManager extends Component {
                           <ClasseSlot
                             key={code}
                             code={code}
-                            color="dark-blue"
+                            color="dark-green"
                             overrideClick={() => toggleElective(code)}
                             forceEnabled
                           />
@@ -105,7 +105,7 @@ class ElectivesManager extends Component {
                           <ClasseSlot
                             key={code}
                             code={code}
-                            color="dark-blue"
+                            color="dark-green"
                             overrideClick={() => toggleElective(code)}
                             forceEnabled
                           />

@@ -80,7 +80,7 @@ class ReportManager extends Component {
           classNames={{ modal: 'br4 w-100 w-70-l' }}
         >
           <div className="montserrat">
-            <div className="f4 fw6 mb4 dark-blue">
+            <div className="f4 fw6 mb4 dark-green">
               Relatório de Conclusão do Curso
             </div>
             {isShowingReport ? (

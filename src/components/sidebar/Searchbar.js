@@ -39,7 +39,7 @@ class Searchbar extends Component {
   render() {
     const { searchQuery, searchResults } = this.state
     return (
-      <div className="bg-dark-blue h2 pa2" style={{ height: '3rem' }}>
+      <div className="bg-dark-green h2 pa2" style={{ height: '3rem' }}>
         <div className="relative h-100">
           <div
             className={`h-100 w-100 br3 bg-white relative z-3 flex items-center ${
@@ -66,7 +66,7 @@ class Searchbar extends Component {
           {searchResults.length > 0 && (
             <div className="absolute w-100 z-2 bg-white shadow-1 br3 br--bottom pa2 flex flex-wrap justify-between">
               {searchResults.map(code => (
-                <ClasseSlot key={code} code={code} color="dark-blue" />
+                <ClasseSlot key={code} code={code} color="dark-green" />
               ))}
             </div>
           )}

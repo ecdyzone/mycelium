@@ -87,7 +87,7 @@ class ClasseCredits extends Component {
         )}
         {classe.custom ? null : isEditingCredits ? (
           <button
-            className="ml3 h2 bg-lightest-blue pointer hover-bg-light-blue dark-blue b--none f5 ph3 pv1 br3"
+            className="ml3 h2 bg-lightest-green pointer hover-bg-light-green dark-green b--none f5 ph3 pv1 br3"
             onClick={this.saveEditing}
           >
             Salvar

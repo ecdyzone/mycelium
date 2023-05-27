@@ -16,7 +16,7 @@ A versão ideal do Node.js para rodar os comandos é a v8. Utilize o utilitário
 
 Exemplo de script:
 ```bash
-git clone http://mumaral.github.io/mycelium mycelium
+git clone http://github.com/mumaral/mycelium mycelium
 cd mycelium
 node -v && npm -v # garanta que nodejs e npm estejam instalados
 npm install

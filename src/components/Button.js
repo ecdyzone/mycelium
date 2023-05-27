@@ -23,13 +23,13 @@ class Button extends Component {
         : variation === 'important'
           ? {
               primary: 'white',
-              secondary: 'dark-blue',
+              secondary: 'dark-green',
               hover: 'navy',
             }
           : {
-              primary: 'dark-blue',
-              secondary: 'lightest-blue',
-              hover: 'light-blue',
+              primary: 'dark-green',
+              secondary: 'lightest-green',
+              hover: 'light-green',
             }
 
     return (

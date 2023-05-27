@@ -89,7 +89,7 @@ class ClasseAdder extends Component {
           classNames={{ modal: 'br4 w-100 w-40-l' }}
         >
           <div className="montserrat">
-            <div className="f4 fw6 mb4 dark-blue">Adicionar Disciplina</div>
+            <div className="f4 fw6 mb4 dark-green">Adicionar Disciplina</div>
             <div className="flex flex-column mb3">
               <label className="fw5 mb1">Código</label>
               <input
@@ -130,22 +130,22 @@ class ClasseAdder extends Component {
             </div>
             <div className="mb4">
               <label className="fw5 mb1">Tipo de Optativa</label>
-              <div className="ba bw2 b--dark-blue br3 flex overflow-hidden">
+              <div className="ba bw2 b--dark-green br3 flex overflow-hidden">
                 <div
-                  className={`br bw1 b--dark-blue pa2 fw5 flex-auto tc ${
+                  className={`br bw1 b--dark-green pa2 fw5 flex-auto tc ${
                     isFree
-                      ? 'dark-blue pointer hover-bg-light-gray'
-                      : 'white bg-dark-blue'
+                      ? 'dark-green pointer hover-bg-light-gray'
+                      : 'white bg-dark-green'
                   }`}
                   onClick={() => (isFree ? this.toggleFree() : null)}
                 >
                   Eletiva
                 </div>
                 <div
-                  className={`bl bw1 b--dark-blue pa2 fw5 flex-auto tc ${
+                  className={`bl bw1 b--dark-green pa2 fw5 flex-auto tc ${
                     isFree
-                      ? 'white bg-dark-blue'
-                      : 'dark-blue pointer hover-bg-light-gray'
+                      ? 'white bg-dark-green'
+                      : 'dark-green pointer hover-bg-light-gray'
                   }`}
                   onClick={() => (isFree ? null : this.toggleFree())}
                 >

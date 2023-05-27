@@ -87,6 +87,12 @@ dizer que peguei as disciplinas do projeto pedagógico 2021
 disponível em: https://graduacao.ib.usp.br/images/PPP/Projeto_Pedagogico_V01-2021_1.pdf
 
 
+parece que o crawler tá meio cagado
+talvez eu precise reescrever (em shell ou python?)
+
+outra opção é o usar como base o jupiterweb crawler em python
+
+
 # endings
 
 - correct credits/copyright in footer.js
@@ -100,7 +106,15 @@ npm install
 sed -i 's/Yggdrasil2/mycelium/g' src/components/report/Report.js src/components/report/ReportManager.js
 sed -i 's/Yggdrasil/mycelium/g' src/components/report/Report.js src/components/report/ReportManager.js
 grep -r blue jupiterCrawl.js next.config.js next-env.d.ts package.json package-lock.json pages public src tsconfig.json -l | xargs | pbcopy
+grep -r blue src -l | xargs | pbcopy
 sed -i 's/blue/green/g' $(pbpaste)
+sed -i 's/blue/green/g' src/components/classes/ClassesContainer.js src/components/classes/ClasseCredits.js src/components/classes/ClasseAdder.js src/components/Button.js src/components/report/ReportManager.js src/components/sidebar/ElectivesManager.js src/components/sidebar/ScheduleManager.js src/components/sidebar/Searchbar.js src/components/credits/CreditsProgress.js src/components/credits/SpecialOptatives.js
+copy by hand: Header.js & ProgressCircles.js & README.md
 npm run build
 sed -i 's#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem"/></header>#<img src="amoonguss.png" class="flex-none ml2" style="height:5rem; transform: scaleX(-1)"/></header>#g' .next/server/pages/index.html
 npm start
+
+
+# to check
+
+@fortawesome ??? mistype ??

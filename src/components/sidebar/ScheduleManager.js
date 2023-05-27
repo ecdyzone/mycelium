@@ -53,7 +53,7 @@ class ScheduleManager extends Component {
           classNames={{ modal: 'br4 w-100 w-70-l' }}
         >
           <div className="montserrat">
-            <div className="f4 fw6 mb4 dark-blue">Minha Agenda</div>
+            <div className="f4 fw6 mb4 dark-green">Minha Agenda</div>
             <div className="mb4">
               <ScheduleBox
                 icon={faPencilAlt}

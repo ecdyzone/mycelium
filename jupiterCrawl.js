@@ -4,16 +4,18 @@ const phantom = require('phantom')
 const cheerioAdv = require('cheerio-advanced-selectors')
 const cheerio = cheerioAdv.wrap(require('cheerio'))
 
-const geral = require('./src/tracks/geral').default
-const teoria = require('./src/tracks/teoria').default
-const escience = require('./src/tracks/escience').default
-const sistemas = require('./src/tracks/sistemas').default
-const ia = require('./src/tracks/ia').default
-// TODO - add bio tracks
-// const bio = require('./src/tracks/bio/file.js').default
-// const nucleobasico = require('./src/tracks/nucleobasico.js')
-
-
+// const geral = require('./src/tracks/geral').default
+// const teoria = require('./src/tracks/teoria').default
+// const escience = require('./src/tracks/escience').default
+// const sistemas = require('./src/tracks/sistemas').default
+// const ia = require('./src/tracks/ia').default
+// TODONE - add bio tracks
+const nucleobasico = require('./src/tracks/nucleobasico').default
+const bachareladoobrigatorias = require('./src/tracks/bachareladoobrigatorias').default
+const bachareladoeletivas = require('./src/tracks/bachareladoeletivas').default
+const bachareladolivres = require('./src/tracks/bachareladolivres').default
+const licenciaturaobrigatorias = require('./src/tracks/licenciaturaobrigatorias').default
+const licenciaturalivres = require('./src/tracks/licenciaturalivres').default
 
 const grabClassesFromBoxes = boxes =>
   boxes.reduce((acc, cur) => [...acc, ...cur.classes], [])
@@ -27,14 +29,18 @@ const grabClassesFromTrack = track => [
 
   const allClasses = Array.from(
     new Set([
-      ...grabClassesFromTrack(geral),
-      ...grabClassesFromTrack(teoria),
-      ...grabClassesFromTrack(escience),
-      ...grabClassesFromTrack(sistemas),
-      ...grabClassesFromTrack(ia),
-      // TODO - add bio tracks
-      // ...grabClassesFromTrack(bio),
-      // ...grabClassesFromTrack(nucleobasico),
+      // ...grabClassesFromTrack(geral),
+      // ...grabClassesFromTrack(teoria),
+      // ...grabClassesFromTrack(escience),
+      // ...grabClassesFromTrack(sistemas),
+      // ...grabClassesFromTrack(ia),
+      // TODONE - add bio tracks
+      ...grabClassesFromTrack(nucleobasico),
+      ...grabClassesFromTrack(bachareladoobrigatorias),
+      ...grabClassesFromTrack(bachareladoeletivas),
+      ...grabClassesFromTrack(bachareladolivres),
+      ...grabClassesFromTrack(licenciaturaobrigatorias),
+      ...grabClassesFromTrack(licenciaturalivres),
     ])
   )
 
