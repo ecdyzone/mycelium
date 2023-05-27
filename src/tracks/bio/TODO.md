@@ -118,3 +118,14 @@ npm start
 # to check
 
 @fortawesome ??? mistype ??
+
+
+
+# next steps
+
+- run crawler
+- check if everything is ok
+- aesthetics adjustments (icons)
+- validation checks (number of credits, classes information, etc)
+- matrusp export function
+- turn github pages ON
