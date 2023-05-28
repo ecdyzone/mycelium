@@ -28,6 +28,15 @@ export default {
           'BIF0214',
           'BIF0217',
           'BIO0205',
+        ],
+        type: BoxTypes.COMPLETE_ALL,
+      },
+    ],
+    right: [
+      {
+        title: 'Obrigatórias2',
+        classeType: ClasseTypes.MANDATORY,
+        classes: [
           'BIO0207',
           'BIZ0213',
           'BIB0124',

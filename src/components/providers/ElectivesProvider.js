@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import geral from '../../tracks/geral';
+// import geral from '../../tracks/geral';
 // TODO - add bio tracks
-// import nucleobasico from '../../tracks/nucleobasico';
+import nucleobasico from '../../tracks/nucleobasico';
 import { ClasseTypes } from '../../definitions/constants';
 import withClasses from './withClasses';
 
@@ -54,9 +54,9 @@ class ElectivesProvider extends Component {
 
   render() {
     const { children, customBoxClasses } = this.props;
-    const allGeneral = [...geral.boxes.left, ...geral.boxes.right];
+    // const allGeneral = [...geral.boxes.left, ...geral.boxes.right];
     // TODO - add bio tracks
-    // const allGeneral = [...nucleobasico.boxes.left, ...nucleobasico.boxes.right];
+    const allGeneral = [...nucleobasico.boxes.left, ...nucleobasico.boxes.right];
     const mandatoryClasses = allGeneral.find(
       (box) => box.classeType === ClasseTypes.MANDATORY,
     ).classes;

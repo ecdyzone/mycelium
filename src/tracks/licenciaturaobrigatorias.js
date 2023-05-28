@@ -2,7 +2,7 @@ import { BoxTypes } from '../definitions/constants'
 
 export default {
   description:
-    'Dentro do grupo de disciplinas de Psicologia da Educação (4.1) os alunos devem cursar uma única disciplina , que é considerada pelo IB como obrigatória e pela FE como optativa eletiva'
+    'Dentro do grupo de disciplinas de Psicologia da Educação (4.1) os alunos devem cursar uma única disciplina , que é considerada pelo IB como obrigatória e pela FE como optativa eletiva',
   boxes: {
     left: [
       {
@@ -25,7 +25,7 @@ export default {
       },
       {
         title: 'Oferecida pela Faculdade de Saúde Pública',
-        classes: ['HEP0142']
+        classes: ['HEP0142'],
         type: BoxTypes.COMPLETE_ALL,
       },
     ],

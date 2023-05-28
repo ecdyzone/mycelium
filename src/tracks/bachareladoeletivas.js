@@ -14,7 +14,7 @@ export default {
         title: 'Ecologia',
         classes: ['BIE0315', 'BIE0317', 'BIE0320', 'BIE0322'],
         type: BoxTypes.COMPLETE_SOME,
-      }
+      },
       {
         title: 'Fisiologia',
         classes: ['BIF0303', 'BIF0304'],
