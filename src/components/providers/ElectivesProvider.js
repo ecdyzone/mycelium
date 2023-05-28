@@ -61,24 +61,24 @@ class ElectivesProvider extends Component {
       (box) => box.classeType === ClasseTypes.MANDATORY,
     ).classes;
 
-    const statisticsClasses = allGeneral.find(
-      (box) => box.classeType === ClasseTypes.STATISTICS,
-    ).classes;
+    // const statisticsClasses = allGeneral.find(
+    //   (box) => box.classeType === ClasseTypes.STATISTICS,
+    // ).classes;
 
-    const scienceBox = allGeneral.find(
-      (box) => box.classeType === ClasseTypes.SCIENCE,
-    );
+    // const scienceBox = allGeneral.find(
+    //   (box) => box.classeType === ClasseTypes.SCIENCE,
+    // );
 
-    const scienceClasses = [
-      ...scienceBox.classes,
-      // ...customBoxClasses[scienceBox.addingId],
-    ];
+    // const scienceClasses = [
+    //   ...scienceBox.classes,
+    //   // ...customBoxClasses[scienceBox.addingId],
+    // ];
 
     const ctx = {
       ...this.state,
       mandatoryClasses,
-      statisticsClasses,
-      scienceClasses,
+      // statisticsClasses,
+      // scienceClasses,
     };
 
     return (

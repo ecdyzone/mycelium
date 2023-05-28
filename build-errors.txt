@@ -1,0 +1,17 @@
+no geral parece estar pronto. Agora tento compilar e dá problema em pequenos detalhes que tavez exijam que eu entre mais no código. Como deixar ele mais genérico? sem precisar do boxes right lft, checar o validate? preciso adicionar o codigo de validation que tinha em alguns tracks.js nos meus arquivos?
+
+
+right boxes nucleobasico erro
+
+tirar o statistics eletive, etcs...
+to tentando ir sem pra ver se quebra
+
+talvez rodar o validate já resolveria?
+npm run validate?
+ou npm validate
+
+as imagens não dão erro, ele já cuida disso jogando pro custom
+
+e aí, qual o problema agora?
+
+boxes.right not iterable
