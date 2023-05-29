@@ -59,22 +59,22 @@ const ClassesContainer = () => {
       />
       <Track
         title="Bacharelado Eletivas"
-        colors={['dark-pink', 'bg-light-pink']}
+        colors={['dark-blue', 'bg-light-blue']}
         rules={bachareladoeletivas}
       />
       <Track
         title="Bacharelado Livres"
-        colors={['orange', 'bg-light-yellow']}
+        colors={['dark-blue', 'bg-light-blue']}
         rules={bachareladolivres}
       />
       <Track
         title="Licenciatura Obrigatórias"
-        colors={['dark-red', 'bg-light-red']}
+        colors={['dark-pink', 'bg-light-pink']}
         rules={licenciaturaobrigatorias}
       />
       <Track
         title="Licenciatura Livres"
-        colors={['dark-red', 'bg-light-red']}
+        colors={['dark-pink', 'bg-light-pink']}
         rules={licenciaturalivres}
       />
     </main>

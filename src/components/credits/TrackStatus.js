@@ -8,7 +8,7 @@ import withClasses from '../providers/withClasses'
 // import escience from '../../tracks/escience'
 // import ia from '../../tracks/ia'
 // TODO - add bio tracks
-// import nucleobasico from '../../tracks/nucleobasico'
+import nucleobasico from '../../tracks/nucleobasico'
 import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
 import bachareladoeletivas from '../../tracks/bachareladoeletivas'
 import bachareladolivres from '../../tracks/bachareladolivres'
@@ -22,7 +22,7 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
   // const validEscience = validateTrack(escience, doneClasses, customBoxClasses)
   // const validIa = validateTrack(ia, doneClasses, customBoxClasses)
   // TODO - add bio tracks
-  // const validNucleobasico = validateTrack(nucleobasico, doneClasses, customBoxClasses)
+  const validNucleobasico = validateTrack(nucleobasico, doneClasses, customBoxClasses)
   const validBachareladoobrigatorias = validateTrack(bachareladoobrigatorias, doneClasses, customBoxClasses)
   const validBachareladoeletivas = validateTrack(bachareladoeletivas, doneClasses, customBoxClasses)
   const validBachareladolivres = validateTrack(bachareladolivres, doneClasses, customBoxClasses)
@@ -31,6 +31,15 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
 
   return (
     <React.Fragment>
+      <div className="flex items-center mb2 fw5">
+        <FontAwesomeIcon
+          icon={faCheckCircle}
+          className={`${validNucleobasico ? 'green' : 'white'} f4 mr2`}
+        />
+        <span className={validNucleobasico ? 'near-black' : 'moon-gray'}>
+          Núcleo Básico
+        </span>
+      </div>
       <div className="flex items-center mb2 fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
@@ -43,7 +52,7 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
       <div className="flex items-center mb2 fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
-          className={`${validBachareladoeletivas ? 'hot-pink' : 'white'} f4 mr2`}
+          className={`${validBachareladoeletivas ? 'blue' : 'white'} f4 mr2`}
         />
         <span className={validBachareladoeletivas ? 'near-black' : 'moon-gray'}>
           Bacharelado Eletivas
@@ -52,16 +61,16 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
       <div className="flex items-center mb2 fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
-          className={`${validBachareladolivres ? 'orange' : 'white'} f4 mr2`}
+          className={`${validBachareladolivres ? 'blue' : 'white'} f4 mr2`}
         />
         <span className={validBachareladolivres ? 'near-black' : 'moon-gray'}>
           Bacharelado Livres 
         </span>
       </div>
-      <div className="flex items-center fw5">
+      <div className="flex items-center mb2 fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
-          className={`${validLicenciaturaobrigatorias ? 'red' : 'white'} f4 mr2`}
+          className={`${validLicenciaturaobrigatorias ? 'hot-pink' : 'white'} f4 mr2`}
         />
         <span className={validLicenciaturaobrigatorias ? 'near-black' : 'moon-gray'}>
           Licenciatura Obrigatórias
@@ -70,7 +79,7 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
       <div className="flex items-center fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
-          className={`${validLicenciaturalivres ? 'red' : 'white'} f4 mr2`}
+          className={`${validLicenciaturalivres ? 'hot-pink' : 'white'} f4 mr2`}
         />
         <span className={validLicenciaturalivres ? 'near-black' : 'moon-gray'}>
           Licenciatura Livres

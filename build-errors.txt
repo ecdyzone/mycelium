@@ -66,3 +66,12 @@ https://www.howtogeek.com/devops/how-to-remove-a-commit-from-github/
 
 add prop-types nas dependencias e deixar isso explícito no commit. Talvez abrir até um issue lá?
 
+
+
+
+# todo
+
+add validation by credits in non mandatory tracks (eletivas e livres):
+- Bacharelado Eletivas
+- Bacharelado Livres
+- Licenciatura Livres

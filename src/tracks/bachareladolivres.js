@@ -33,6 +33,8 @@ export default {
         addable: true,
         addingId: 'others',
       },
+    ],
+    right: [
       {
         title: 'Zoologia',
         classes: ['BIZ0411', 'BIZ0426', 'BIZ0427', 'BIZ0429', 'BIZ0433', 'BIZ0435', 'BIZ0437', 'BIZ0440', 'BIZ0446', 'BIZ0448', 'BIZ0450'],
@@ -54,8 +56,6 @@ export default {
         addable: true,
         addingId: 'others',
       },
-    ],
-    right: [
       {
         title: 'Outras Unidades',
         classes: ['AGA0210', 'AGA0316', 'CBM0120', 'CBM0150', 'GMG0490', 'GMG0630', 'IEB0267', 'IOB0100', 'IOB0103', 'IOB0125', 'IOB0130', 'IOB0137', 'IOB0139', 'IOB0140', 'IOB0141', 'IOB0147', 'IOB0151', 'IOB0152', 'IOF0248', 'IOF0251', 'MAT3110', 'MZC0013', 'MZC0016', 'MZC0017'],
