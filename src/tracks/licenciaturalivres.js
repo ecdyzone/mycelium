@@ -19,6 +19,16 @@ export default {
           'BIB0451',
           'BIB0443',
           'BIB0450',
+        ],
+        type: BoxTypes.COMPLETE_SOME,
+        addable: true,
+        addingId: 'others',
+      },
+    ],
+    right: [
+      {
+        title: 'Livres2',
+        classes: [
           'BIE0319',
           'BIE0403',
           'BIF0443',
