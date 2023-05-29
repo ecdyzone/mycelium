@@ -9,7 +9,7 @@ import withClasses from '../providers/withClasses'
 // import ia from '../../tracks/ia'
 // TODO - add bio tracks
 // import nucleobasico from '../../tracks/nucleobasico'
-// import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
+import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
 import bachareladoeletivas from '../../tracks/bachareladoeletivas'
 import bachareladolivres from '../../tracks/bachareladolivres'
 import licenciaturaobrigatorias from '../../tracks/licenciaturaobrigatorias'
@@ -23,7 +23,7 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
   // const validIa = validateTrack(ia, doneClasses, customBoxClasses)
   // TODO - add bio tracks
   // const validNucleobasico = validateTrack(nucleobasico, doneClasses, customBoxClasses)
-  // const validBachareladoobrigatorias = validateTrack(bachareladoobrigatorias, doneClasses, customBoxClasses)
+  const validBachareladoobrigatorias = validateTrack(bachareladoobrigatorias, doneClasses, customBoxClasses)
   const validBachareladoeletivas = validateTrack(bachareladoeletivas, doneClasses, customBoxClasses)
   const validBachareladolivres = validateTrack(bachareladolivres, doneClasses, customBoxClasses)
   const validLicenciaturaobrigatorias = validateTrack(licenciaturaobrigatorias, doneClasses, customBoxClasses)

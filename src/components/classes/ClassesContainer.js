@@ -7,7 +7,7 @@ import Track from './Track'
 // import teoria from '../../tracks/teoria'
 // TODONE - add bio tracks
 import nucleobasico from '../../tracks/nucleobasico'
-// import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
+import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
 import bachareladoeletivas from '../../tracks/bachareladoeletivas'
 import bachareladolivres from '../../tracks/bachareladolivres'
 import licenciaturaobrigatorias from '../../tracks/licenciaturaobrigatorias'
@@ -51,6 +51,11 @@ const ClassesContainer = () => {
         colors={['dark-green', 'bg-light-green']}
         rules={nucleobasico}
         shouldStartOpen
+      />
+      <Track
+        title="Bacharelado Obrigatórias"
+        colors={['dark-blue', 'bg-light-blue']}
+        rules={bachareladoobrigatorias}
       />
       <Track
         title="Bacharelado Eletivas"

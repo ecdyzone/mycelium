@@ -13,5 +13,7 @@ export default {
         type: BoxTypes.COMPLETE_ALL,
       },
     ],
+    right: [
+    ],
   },
 };
