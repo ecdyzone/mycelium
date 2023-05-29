@@ -52,11 +52,6 @@ const ClassesContainer = () => {
         rules={nucleobasico}
         shouldStartOpen
       />
-      // <Track
-      //   title="Bacharelado Obrigatórias"
-      //   colors={['dark-blue', 'bg-light-blue']}
-      //   rules={bachareladoobrigatorias}
-      // />
       <Track
         title="Bacharelado Eletivas"
         colors={['dark-pink', 'bg-light-pink']}
