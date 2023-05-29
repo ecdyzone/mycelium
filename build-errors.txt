@@ -15,3 +15,54 @@ as imagens não dão erro, ele já cuida disso jogando pro custom
 e aí, qual o problema agora?
 
 boxes.right not iterable
+
+
+
+
+no geral parece estar pronto. Agora tento compilar e dá problema em pequenos detalhes que tavez exijam que eu entre mais no código. Como deixar ele mais genérico? sem precisar do boxes right lft, checar o validate? preciso adicionar o codigo de validation que tinha em alguns tracks.js nos meus arquivos?
+
+
+right boxes nucleobasico erro
+
+tirar o statistics eletive, etcs...
+to tentando ir sem pra ver se quebra
+
+talvez rodar o validate já resolveria?
+npm run validate?
+ou npm validate
+
+as imagens não dão erro, ele já cuida disso jogando pro custom
+
+e aí, qual o problema agora?
+
+boxes.right not iterable
+
+
+
+
+
+
+
+1. working build v0.1.0
+2. o que acontece se nucleobasico só tiver lado esquerdo? - build error
+3. e se tiver lado direito vazio? resolve? SIM !  `right: [],` Sempre precisa ter ambos, mesmo que vazios
+    3.1. bachareladoobrigatórias pode ser resolvido com esse mesmo problema
+4. E se eu tirar o ClasseTypes.STATISTICS do nucleobasico.js? quebra? sim. 
+5. mas e se eu deletar tudo que faz referencia a ele?
+
+in ScheduleBox.js import PropTypes 
+prop-types is not at the dependency list. run 'npm i -S prop-types' to add it
+
+
+transformar isso num guia para se ajustar para outros institutos, outras disciplinas... algo genérico independente do curso e talvez até independente da universidade
+
+
+
+
+ao acabar, dar uma geral. E claro, fazer backup antes localmente (2, por segurança)
+https://www.howtogeek.com/devops/how-to-remove-a-commit-from-github/
+
+
+
+add prop-types nas dependencias e deixar isso explícito no commit. Talvez abrir até um issue lá?
+

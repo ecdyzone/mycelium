@@ -34,6 +34,15 @@ const TrackStatus = ({ doneClasses, customBoxClasses }) => {
       <div className="flex items-center mb2 fw5">
         <FontAwesomeIcon
           icon={faCheckCircle}
+          className={`${validBachareladoobrigatorias ? 'blue' : 'white'} f4 mr2`}
+        />
+        <span className={validBachareladoobrigatorias ? 'near-black' : 'moon-gray'}>
+          Bacharelado Obrigatórias
+        </span>
+      </div>
+      <div className="flex items-center mb2 fw5">
+        <FontAwesomeIcon
+          icon={faCheckCircle}
           className={`${validBachareladoeletivas ? 'hot-pink' : 'white'} f4 mr2`}
         />
         <span className={validBachareladoeletivas ? 'near-black' : 'moon-gray'}>
