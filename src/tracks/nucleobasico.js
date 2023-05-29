@@ -35,7 +35,7 @@ export default {
     right: [
       {
         title: 'Obrigatórias2',
-        classeType: ClasseTypes.STATISTICS,
+        classeType: ClasseTypes.MANDATORY,
         classes: [
           'BIO0207',
           'BIZ0213',
@@ -49,7 +49,7 @@ export default {
       },
       {
         title: 'Optativa de Ciências',
-        classeType: ClasseTypes.SCIENCE,
+        classeType: ClasseTypes.MANDATORY,
         classes: [
           'BIO0208',
           'BIZ0212',

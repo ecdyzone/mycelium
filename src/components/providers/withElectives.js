@@ -9,8 +9,6 @@ export default function withElectives(Component) {
           freeElectives,
           toggleElective,
           mandatoryClasses,
-          statisticsClasses,
-          scienceClasses,
           clearElectives,
           importElectives,
           exportElectives,
@@ -20,8 +18,6 @@ export default function withElectives(Component) {
             freeElectives={freeElectives}
             toggleElective={toggleElective}
             mandatoryClasses={mandatoryClasses}
-            statisticsClasses={statisticsClasses}
-            scienceClasses={scienceClasses}
             clearElectives={clearElectives}
             importElectives={importElectives}
             exportElectives={exportElectives}

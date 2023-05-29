@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ClasseSlot from '../classes/ClasseSlot'
 import CreditsManager from '../credits/CreditsManager'
 import CreditsProgress from '../credits/CreditsProgress'
-import SpecialOptatives from '../credits/SpecialOptatives'
 import TrackStatus from '../credits/TrackStatus'
 
 const ScheduleBox = ({ icon, colors, title, classList, fullClassList }) => {
@@ -38,8 +37,6 @@ const ScheduleBox = ({ icon, colors, title, classList, fullClassList }) => {
         <main className="pa4 pt0">
           <CreditsManager doneClasses={fullClassList}>
             {({
-              scienceOptative,
-              statisticsOptative,
               mandatoryCredits,
               electiveCredits,
               freeCredits,
@@ -54,13 +51,6 @@ const ScheduleBox = ({ icon, colors, title, classList, fullClassList }) => {
                   />
                 </div>
                 <div>
-                  <div className="mb4">
-                    <SpecialOptatives
-                      scienceOptative={scienceOptative}
-                      statisticsOptative={statisticsOptative}
-                      color={colors.secondary}
-                    />
-                  </div>
                   <TrackStatus doneClasses={cloneList} />
                 </div>
               </div>

@@ -16,18 +16,10 @@ const ElectiveToggle = ({
 
   return (
     <CreditsManager doneClasses={doneClasses}>
-      {({ statisticsOptative, scienceOptative }) =>
+      {() => (
         mandatoryClasses.includes(code) ? (
           <div className="w-100 w5-ns tc ba bw1 b--light-silver br3 ph3 pv1 silver fw5">
             Obrigatória
-          </div>
-        ) : statisticsOptative === code ? (
-          <div className="w-100 w5-ns tc ba bw1 b--light-silver br3 ph3 pv1 silver fw5">
-            Optativa de Estatística
-          </div>
-        ) : scienceOptative === code ? (
-          <div className="w-100 w5-ns tc ba bw1 b--light-silver br3 ph3 pv1 silver fw5">
-            Optativa de Ciências
           </div>
         ) : (
           <div className="w-100 w5-ns">
@@ -55,7 +47,7 @@ const ElectiveToggle = ({
             </div>
           </div>
         )
-      }
+     )}
     </CreditsManager>
   )
 }

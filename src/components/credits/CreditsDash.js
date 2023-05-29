@@ -11,8 +11,6 @@ const CreditsDash = ({ doneClasses }) => {
   return (
     <CreditsManager doneClasses={doneClasses}>
       {({
-        scienceOptative,
-        statisticsOptative,
         mandatoryCredits,
         electiveCredits,
         freeCredits,
@@ -25,12 +23,6 @@ const CreditsDash = ({ doneClasses }) => {
                 mandatoryCredits={mandatoryCredits}
                 electiveCredits={electiveCredits}
                 freeCredits={freeCredits}
-              />
-            </div>
-            <div className="mt4 mt0-m mt4-l">
-              <SpecialOptatives
-                scienceOptative={scienceOptative}
-                statisticsOptative={statisticsOptative}
               />
             </div>
             <div className="mt4 mt0-m mt4-l">

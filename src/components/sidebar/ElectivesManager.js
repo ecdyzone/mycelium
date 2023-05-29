@@ -62,7 +62,7 @@ class ElectivesManager extends Component {
         >
           <div className="montserrat">
             <CreditsManager doneClasses={doneClasses}>
-              {({ statisticsOptative, scienceOptative }) => (
+              {( ) => (
                 <React.Fragment>
                   <div className="f4 fw6 mb4 dark-green">
                     Gerenciar Optativas
@@ -75,11 +75,6 @@ class ElectivesManager extends Component {
                     <header className="fw6 f5 pa3 near-black">Eletivas</header>
                     <main className="pa3 pt0 flex flex-wrap">
                       {pickableElectives
-                        .filter(
-                          code =>
-                            code !== scienceOptative &&
-                            code !== statisticsOptative
-                        )
                         .map(code => (
                           <ClasseSlot
                             key={code}
@@ -96,11 +91,6 @@ class ElectivesManager extends Component {
                     <header className="fw6 f5 pa3 near-black">Livres</header>
                     <main className="pa3 pt0 flex flex-wrap">
                       {pickableFreeElectives
-                        .filter(
-                          code =>
-                            code !== scienceOptative &&
-                            code !== statisticsOptative
-                        )
                         .map(code => (
                           <ClasseSlot
                             key={code}

@@ -49,14 +49,10 @@ class CreditsManager extends Component {
     const {
       doneClasses,
       mandatoryClasses,
-      statisticsClasses,
-      scienceClasses,
       freeElectives,
       children,
     } = this.props
 
-    const statisticsOptative = this.pickCandidate(statisticsClasses)
-    const scienceOptative = this.pickCandidate(scienceClasses)
 
     const mandatoryDone = doneClasses.filter(code =>
       mandatoryClasses.includes(code)
@@ -65,24 +61,18 @@ class CreditsManager extends Component {
 
     const freeDone = doneClasses.filter(
       code =>
-        freeElectives.includes(code) &&
-        code !== statisticsOptative &&
-        code !== scienceOptative
+        freeElectives.includes(code)
     )
     const freeCredits = this.mapCredits(freeDone)
 
     const electiveDone = doneClasses.filter(
       code =>
         !freeElectives.includes(code) &&
-        !mandatoryClasses.includes(code) &&
-        code !== statisticsOptative &&
-        code !== scienceOptative
+        !mandatoryClasses.includes(code)
     )
     const electiveCredits = this.mapCredits(electiveDone)
 
     return children({
-      statisticsOptative,
-      scienceOptative,
       mandatoryDone,
       mandatoryCredits,
       electiveDone,
@@ -96,8 +86,6 @@ class CreditsManager extends Component {
 CreditsManager.propTypes = {
   doneClasses: PropTypes.array.isRequired,
   mandatoryClasses: PropTypes.array.isRequired,
-  statisticsClasses: PropTypes.array.isRequired,
-  scienceClasses: PropTypes.array.isRequired,
   freeElectives: PropTypes.array.isRequired,
   allClasses: PropTypes.array.isRequired,
   children: PropTypes.func.isRequired,

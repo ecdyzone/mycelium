@@ -55,8 +55,6 @@ class ReportManager extends Component {
       <React.Fragment>
         <CreditsManager doneClasses={[...doneClasses, ...doingClasses]}>
           {({
-            scienceOptative,
-            statisticsOptative,
             mandatoryCredits,
             electiveCredits,
             freeCredits,
@@ -64,8 +62,6 @@ class ReportManager extends Component {
             <ReportButton
               handleReportClick={this.openModal}
               isLikelyGraduate={
-                scienceOptative &&
-                statisticsOptative &&
                 mandatoryCredits >= 111 &&
                 electiveCredits >= 52 &&
                 freeCredits >= 24

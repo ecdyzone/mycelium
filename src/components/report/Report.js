@@ -40,8 +40,6 @@ class Report extends Component {
         </div>
         <CreditsManager doneClasses={[...doneClasses, ...doingClasses]}>
           {({
-            statisticsOptative,
-            scienceOptative,
             mandatoryDone,
             mandatoryCredits,
             electiveDone,
@@ -70,16 +68,6 @@ class Report extends Component {
                 classesOngoing={this.filterDoing(freeDone)}
                 credits={freeCredits}
                 totalCredits={24}
-              />
-              <ReportSpecialSection
-                title="Optativa de Estatística"
-                classe={statisticsOptative}
-                ongoing={this.filterDoing([statisticsOptative]).length > 0}
-              />
-              <ReportSpecialSection
-                title="Optativa de Ciências"
-                classe={scienceOptative}
-                ongoing={this.filterDoing([scienceOptative]).length > 0}
               />
             </React.Fragment>
           )}
