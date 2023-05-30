@@ -4,6 +4,7 @@ export default {
   description:
     'Devem ser cursados 34 créditos-aula de disciplinas de qualquer unidade da USP e podem ser cursadas a qualquer momento da graduação, mesmo antes de abrir o núcleo avançado. As disciplinas exibidas aqui são apenas as que possuem reserva de vagas pro IB. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa.',
   boxes: {
+    center: [],
     left: [
       {
         title: 'Botânica',

@@ -47,6 +47,11 @@ class Track extends Component {
                 {rules.description}
               </div>
             )}
+            <div className="w-100 ph2 mb4">
+              {rules.boxes.center.map(box => (
+                <ClassesBox key={box.title} box={box} colors={colors} />
+              ))}
+            </div>
             <div className="w-100 w-50-l ph2 mb4">
               {rules.boxes.left.map(box => (
                 <ClassesBox key={box.title} box={box} colors={colors} />

@@ -56,7 +56,7 @@ class ElectivesProvider extends Component {
     const { children, customBoxClasses } = this.props;
     // const allGeneral = [...geral.boxes.left, ...geral.boxes.right];
     // TODO - add bio tracks
-    const allGeneral = [...nucleobasico.boxes.left, ...nucleobasico.boxes.right];
+    const allGeneral = [...nucleobasico.boxes.center, ...nucleobasico.boxes.left, ...nucleobasico.boxes.right];
     const mandatoryClasses = allGeneral.find(
       (box) => box.classeType === ClasseTypes.MANDATORY,
     ).classes;

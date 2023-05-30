@@ -21,7 +21,7 @@ export function validateBox(box, doneClasses, customBoxClasses) {
 export function validateTrack(track, doneClasses, customBoxClasses) {
   return track.validate
     ? track.validate(track.boxes, doneClasses)
-    : [...track.boxes.left, ...track.boxes.right].reduce(
+    : [...track.boxes.center, ...track.boxes.left, ...track.boxes.right].reduce(
         (acc, cur) => acc && validateBox(cur, doneClasses, customBoxClasses),
         true
       )

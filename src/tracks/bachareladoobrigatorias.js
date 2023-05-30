@@ -4,6 +4,7 @@ export default {
   description:
     'A única disciplina obrigatória do bacharelado é Pesquisa em Biologia, que possui 4 créditos-aula e 10 créditos-trabalho.',
   boxes: {
+    center: [],
     left: [
       {
         title: 'Obrigatórias',

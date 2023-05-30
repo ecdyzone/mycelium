@@ -4,6 +4,7 @@ export default {
   description:
     'Devem ser cursados 20 créditos-aula. As eletivas também podem ser cursadas como livres quando você já tem créditos suficientes de eletivas. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa.',
   boxes: {
+    center: [],
     left: [
       {
         title: 'Botânica',
