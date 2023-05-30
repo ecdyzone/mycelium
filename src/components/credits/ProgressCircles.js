@@ -37,7 +37,6 @@ const ProgressCircles = ({ mandatory, mandatoryMax, elective, electiveMax, free,
         <CircularProgressbar
           value={mandatory}
           maxValue={mandatoryMax}
-          initialAnimation={true}
           styles={{
             trail: { stroke: 'transparent' },
             path: {
@@ -50,7 +49,6 @@ const ProgressCircles = ({ mandatory, mandatoryMax, elective, electiveMax, free,
         <CircularProgressbar
           value={elective}
           maxValue={electiveMax}
-          initialAnimation={true}
           strokeWidth={9}
           styles={{
             trail: { stroke: 'transparent' },
@@ -64,7 +62,6 @@ const ProgressCircles = ({ mandatory, mandatoryMax, elective, electiveMax, free,
         <CircularProgressbar
           value={free}
           maxValue={freeMax}
-          initialAnimation={true}
           strokeWidth={12}
           styles={{
             trail: { stroke: 'transparent' },

@@ -27,9 +27,9 @@ class CreditsProgress extends Component {
             mandatory={mandatoryCredits}
             mandatoryMax={122}
             elective={electiveCredits}
-            electiveMax={52}
+            electiveMax={20}
             free={freeCredits}
-            freeMax={24}
+            freeMax={54}
             palette={colors && colors.secondary}
           />
         </div>
@@ -42,12 +42,12 @@ class CreditsProgress extends Component {
           <span className={`fw6 ${secondaryColor}`}>Eletivas</span>
           <span className="fw5 silver mb2">
             <span className="mr1">{electiveCredits}</span>/
-            <span className={`${secondaryColor} ml1`}>52</span>
+            <span className={`${secondaryColor} ml1`}>20</span>
           </span>
           <span className={`fw6 ${tertiaryColor}`}>Livres</span>
           <span className="fw5 silver mb2">
             <span className="mr1">{freeCredits}</span>/
-            <span className={`${tertiaryColor} ml1`}>24</span>
+            <span className={`${tertiaryColor} ml1`}>54</span>
           </span>
         </div>
       </div>
