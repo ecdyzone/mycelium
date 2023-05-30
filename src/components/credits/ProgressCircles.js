@@ -26,7 +26,7 @@ const palettes = {
   },
 };
 
-const ProgressCircles = ({ mandatory, elective, free, palette }) => {
+const ProgressCircles = ({ mandatory, mandatoryMax, elective, electiveMax, free, freeMax, palette }) => {
   const colorPalette = palette ? palettes[palette] : palettes.green;
 // TODO - activate green colors
   // const colorPalette = palette ? palettes[palette] : palettes.green;
@@ -35,7 +35,8 @@ const ProgressCircles = ({ mandatory, elective, free, palette }) => {
     <div className="relative w-100">
       <div>
         <CircularProgressbar
-          percentage={mandatory}
+          value={mandatory}
+          maxValue={mandatoryMax}
           initialAnimation={true}
           styles={{
             trail: { stroke: 'transparent' },
@@ -47,7 +48,8 @@ const ProgressCircles = ({ mandatory, elective, free, palette }) => {
       </div>
       <div className="absolute top-0 z-1" style={{ padding: '9.5%' }}>
         <CircularProgressbar
-          percentage={elective}
+          value={elective}
+          maxValue={electiveMax}
           initialAnimation={true}
           strokeWidth={9}
           styles={{
@@ -60,9 +62,10 @@ const ProgressCircles = ({ mandatory, elective, free, palette }) => {
       </div>
       <div className="absolute top-0 z-1" style={{ padding: '18%' }}>
         <CircularProgressbar
-          strokeWidth={12}
-          percentage={free}
+          value={free}
+          maxValue={freeMax}
           initialAnimation={true}
+          strokeWidth={12}
           styles={{
             trail: { stroke: 'transparent' },
             path: {

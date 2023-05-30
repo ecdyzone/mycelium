@@ -8,10 +8,6 @@ class CreditsProgress extends Component {
     this.state = {}
   }
 
-  calcPercentage = (credits, totalCredits) => {
-    return credits / totalCredits < 1 ? (credits / totalCredits) * 100 : 100
-  }
-
   render() {
     const {
       mandatoryCredits,
@@ -28,9 +24,12 @@ class CreditsProgress extends Component {
       <div className="flex items-center">
         <div className="w-40 w4-m w-40-l mr3">
           <ProgressCircles
-            mandatory={this.calcPercentage(mandatoryCredits, 122)}
-            elective={this.calcPercentage(electiveCredits, 52)}
-            free={this.calcPercentage(freeCredits, 24)}
+            mandatory={mandatoryCredits}
+            mandatoryMax={122}
+            elective={electiveCredits}
+            electiveMax={52}
+            free={freeCredits}
+            freeMax={24}
             palette={colors && colors.secondary}
           />
         </div>

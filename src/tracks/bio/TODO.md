@@ -121,6 +121,17 @@ npm start
 
 
 
+# installation
+
+next and react are dependencies, include them at the running locally readme, besides nodejs and npm
+npm install next@latest react@latest react-dom@latest
+
+
+"react-circular-progressbar": "^2.1.0",
+isso tá quebrando, porque tiveram breaking changes na versão 2.0
+ou mudo o código ou uso a versão anterior do código
+
+
 # next steps
 
 - run crawler
