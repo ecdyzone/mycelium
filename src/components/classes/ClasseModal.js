@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Modal from 'react-responsive-modal'
+import 'react-responsive-modal/styles.css'
 import ClasseSlot from './ClasseSlot'
 import Button from '../Button'
 import {
