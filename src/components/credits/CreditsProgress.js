@@ -28,17 +28,17 @@ class CreditsProgress extends Component {
       <div className="flex items-center">
         <div className="w-40 w4-m w-40-l mr3">
           <ProgressCircles
-            mandatory={this.calcPercentage(mandatoryCredits, 111)}
+            mandatory={this.calcPercentage(mandatoryCredits, 122)}
             elective={this.calcPercentage(electiveCredits, 52)}
             free={this.calcPercentage(freeCredits, 24)}
             palette={colors && colors.secondary}
           />
         </div>
         <div className="flex flex-column">
-          <span className={`fw6 ${primaryColor}`}>Obrigatórias</span>
+          <span className={`fw6 ${primaryColor}`}>Núcleo Básico</span>
           <span className="fw5 silver mb2">
             <span className="mr1">{mandatoryCredits}</span>/
-            <span className={`${primaryColor} ml1`}>111</span>
+            <span className={`${primaryColor} ml1`}>122</span>
           </span>
           <span className={`fw6 ${secondaryColor}`}>Eletivas</span>
           <span className="fw5 silver mb2">

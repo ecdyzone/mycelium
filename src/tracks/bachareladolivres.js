@@ -2,7 +2,7 @@ import { BoxTypes } from '../definitions/constants'
 
 export default {
   description:
-    '34 creditos-aula. É possível cursar as disciplinas eletivas contando créditos de optativas livres. Podem ser cursadas optativas livres de qualquer unidade da USP, as que estão aqui são apenas as que existem reserva pro IB',
+    'Devem ser cursados 34 créditos-aula de disciplinas de qualquer unidade da USP e podem ser cursadas a qualquer momento da graduação, mesmo antes de abrir o núcleo avançado. As disciplinas exibidas aqui são apenas as que possuem reserva de vagas pro IB. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa.',
   boxes: {
     left: [
       {

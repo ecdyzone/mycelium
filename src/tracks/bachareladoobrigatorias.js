@@ -2,7 +2,7 @@ import { BoxTypes, ClasseTypes } from '../definitions/constants';
 
 export default {
   description:
-    'Pesquisa em Biologia.',
+    'A única disciplina obrigatória do bacharelado é Pesquisa em Biologia, que possui 4 créditos-aula e 10 créditos-trabalho.',
   boxes: {
     left: [
       {

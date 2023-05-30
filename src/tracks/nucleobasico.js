@@ -2,7 +2,7 @@ import { BoxTypes, ClasseTypes } from '../definitions/constants';
 
 export default {
   description:
-    '29 disciplinas | 122 creditos aula | 22 creditos trabalho.',
+    'O núcleo básico consiste em 29 disciplinas obrigatórias que somam 122 créditos-aula e 22 créditos-trabalho. A partir de 96 créditos-aula cumpridos, é possível abrir o núcleo avançado',
   boxes: {
     left: [
       {

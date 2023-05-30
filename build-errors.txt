@@ -68,6 +68,11 @@ add prop-types nas dependencias e deixar isso explícito no commit. Talvez abrir
 
 
 
+- ver de adaptar o stastistics and science classes pra categorizações de bacharelado e licenciatura. Pode ser uma paralela. Em definition/constants
+- existe um bug aqui de que o mandatory classetypes só funciona uma vez, numa boxes.left ou boxes.right depois disso é contabilizado como eletiva
+- apagando o mandatory do nucleobasico.js, da erro na build
+
+
 
 # todo
 

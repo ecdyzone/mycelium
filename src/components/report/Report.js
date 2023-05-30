@@ -49,11 +49,11 @@ class Report extends Component {
           }) => (
             <React.Fragment>
               <ReportSection
-                title="Disciplinas Obrigatórias"
+                title="Disciplinas Obrigatórias Núcleo Básico"
                 classesFinished={this.filterDone(mandatoryDone)}
                 classesOngoing={this.filterDoing(mandatoryDone)}
                 credits={mandatoryCredits}
-                totalCredits={111}
+                totalCredits={122}
               />
               <ReportSection
                 title="Disciplinas Optativas Eletivas"

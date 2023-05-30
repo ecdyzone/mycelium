@@ -2,7 +2,7 @@ import { BoxTypes } from '../definitions/constants'
 
 export default {
   description:
-    '20 creditos-aula. É possível cursar as disciplinas eletivas contando créditos de optativas livres.',
+    'Devem ser cursados 20 créditos-aula. As eletivas também podem ser cursadas como livres quando você já tem créditos suficientes de eletivas. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa.',
   boxes: {
     left: [
       {

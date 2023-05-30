@@ -129,3 +129,10 @@ npm start
 - validation checks (number of credits, classes information, etc)
 - matrusp export function
 - turn github pages ON
+
+
+ajustar discplinas
+- mudanças pós 2022
+- extensão como obrigatória
+- 0410200 ATPEB como disciplina livre da licenciatura? isso continua existindo? ver guia da CG
+

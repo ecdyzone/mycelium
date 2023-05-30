@@ -62,7 +62,7 @@ class ReportManager extends Component {
             <ReportButton
               handleReportClick={this.openModal}
               isLikelyGraduate={
-                mandatoryCredits >= 111 &&
+                mandatoryCredits >= 122 &&
                 electiveCredits >= 52 &&
                 freeCredits >= 24
               }

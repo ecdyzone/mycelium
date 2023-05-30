@@ -6,8 +6,8 @@ export const BoxTypes = {
 
 export const ClasseTypes = {
   MANDATORY: 0,
-  STATISTICS: 1,
-  SCIENCE: 2,
+  BACHARELADO: 1,
+  LICENCIATURA: 2,
 }
 
 export const ClasseStatus = {
