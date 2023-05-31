@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../Button'
-import { faFileUpload, faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { faFileUpload, faFileDownload, faCalendar } from '@fortawesome/free-solid-svg-icons'
 import withClasses from '../providers/withClasses'
 import withElectives from '../providers/withElectives'
 import withEvolution from '../providers/withEvolution'
@@ -24,6 +24,18 @@ class IOManager extends Component {
       type: 'text/plain;charset=utf-8',
     })
     saveAs(blob, 'mycelium_export.json')
+  }
+
+  exportMatrusp = () => {
+    const {doingClasses, scheduledClasses} = this.props
+    const payload = {
+      doing: doingClasses(),
+      scheduled: scheduledClasses(),
+    }
+    const blob = new Blob([JSON.stringify(payload)], {
+      type: 'text/plain;charset=utf-8',
+    })
+    saveAs(blob, 'mycelium.matrusp')
   }
 
   importData = rawData => {
@@ -56,18 +68,25 @@ class IOManager extends Component {
   render() {
     return (
       <div className="flex">
-        <div className="mr2 w-100">
+        <div className="ml2 w-100">
           <Button
             text="Importar"
             icon={faFileUpload}
             onClick={this.openPicker}
           />
         </div>
-        <div className="ml2 w-100">
+        <div className="ml1 mr1 w-100">
           <Button
             text="Exportar"
             icon={faFileDownload}
             onClick={this.exportData}
+          />
+        </div>
+        <div className="mr2 w-100">
+          <Button
+            text="MatrUSP"
+            icon={faCalendar}
+            onClick={this.exportMatrusp}
           />
         </div>
         <input
@@ -88,6 +107,8 @@ IOManager.propTypes = {
   exportEvolution: PropTypes.func.isRequired,
   importElectives: PropTypes.func.isRequired,
   exportElectives: PropTypes.func.isRequired,
+  doingClasses: PropTypes.func.isRequired,
+  scheduledClasses: PropTypes.func.isRequired,
 }
 
 export default withEvolution(withElectives(withClasses(IOManager)))

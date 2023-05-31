@@ -134,13 +134,11 @@ ou mudo o código ou uso a versão anterior do código
 
 # next steps
 
-- run crawler
-- check if everything is ok
 - aesthetics adjustments (icons)
 - validation checks (number of credits, classes information, etc)
 - mycelium export - dizer que a pessoa pode deixar guardado no drive dela, e só importar depois, em qualquer computador ou celular (apesar de ficar salvo nos cookies)
-- matrusp export function - o mesmo
-- turn github pages ON
+- matrusp export function - o mesmo (video ou tutorial sobre arquivos)
+- verde claro demais nos progress circles
 
 
 ajustar discplinas
@@ -151,8 +149,33 @@ ajustar discplinas
 
 
 
-o que falta
-- validation checkboxes eletivas e livres (estão sempre ON, mudar isso)
-- verde claro demais
-- reports
+PRIORITÁRIOS RESTANTES
+- validations
+    - checkboxes eletivas e livres (estão sempre ON, mudar isso)
+    - credits counting (triggers some actions)
+- matrusp export function - o mesmo
+- turn github pages ON
 - crawler
+
+
+
+sobre matrusp export
+talvez a solção seja criar uma função exportMatrusp no EvolutionProvider, mapear ela no with Evolution e depois chamar no IOManager
+algo como (pseudo code em pytohn a ser escrito em js no evolution provider):
+
+```python
+text_begin='''
+{"version":7,"identifier":"minhagrade","plans":[
+    {"activeCombinationIndex":0,"name":"Plano 1","colors":[0,0,0,0,0,0,0,0,0,0,0,0,0],"lectures":[
+'''
+text_middle=''
+for classe in (this.state.doneClasses):
+    text_middle=text_middle.concat('{"code":f"{classe}","selected":true},')
+text_end='''
+    ]}],"activePlanIndex":0}
+'''
+
+return str.concat(text_begin, text_middle, text_end)
+```
+
+e essa string é o que será escrita
