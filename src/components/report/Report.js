@@ -23,7 +23,7 @@ class Report extends Component {
     return (
       <div className="pa4 opensans">
         <h1 className="tc f5 near-black b">Relatório de Conclusão de Curso</h1>
-        <h3 className="tc f6 normal">Bacharelado em Ciência da Computação</h3>
+        <h3 className="tc f6 normal">Bacharelado e/ou Licenciatura em Ciências Biológicas</h3>
         <div className="flex flex-wrap justify-between mt4 f6">
           <span>
             <span className="b">Nome: </span>
@@ -49,21 +49,21 @@ class Report extends Component {
           }) => (
             <React.Fragment>
               <ReportSection
-                title="Disciplinas Obrigatórias Núcleo Básico"
+                title="Disciplinas Obrigatórias do Núcleo Básico"
                 classesFinished={this.filterDone(mandatoryDone)}
                 classesOngoing={this.filterDoing(mandatoryDone)}
                 credits={mandatoryCredits}
                 totalCredits={122}
               />
               <ReportSection
-                title="Disciplinas Optativas Eletivas"
+                title="Disciplinas Optativas Eletivas do Bacharelado"
                 classesFinished={this.filterDone(electiveDone)}
                 classesOngoing={this.filterDoing(electiveDone)}
                 credits={electiveCredits}
                 totalCredits={52}
               />
               <ReportSection
-                title="Disciplinas Optativas Livres"
+                title="Disciplinas Optativas Livres do Bacharelado e/ou Licenciatura"
                 classesFinished={this.filterDone(freeDone)}
                 classesOngoing={this.filterDoing(freeDone)}
                 credits={freeCredits}

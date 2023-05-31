@@ -2,7 +2,7 @@
     {
         "code": "BIB0306",
         "name": "Integração na Universidade e na Profissão",
-        "credits": "2",
+        "credits": "8",
         "wcredits": "0",
         "summary": "Durante o semestre os ingressantes assistirão palestras de alunos veteranos e ex-alunos do BCC, além de alguns convidados. Nas palestras os veteranos compartilharão com os calouros as suas experiências do dia a dia como alunos do BCC. Os veteranos apresentarão os seus grupos extracurriculares de interesse, estudo e pesquisa e suas atividades em comunidade. Espera-se que os ex-alunos descrevam um pouco da sua experiência pessoal como alunos do BCC e profissionais de computação, além de alguma perspectiva na área. Várias palestras podem ser de interesse de estudantes de outros cursos além do BCC.",
         "dependencies": []
@@ -10,7 +10,7 @@
     {
         "code": "BIB0311",
         "name": "Fundamentos de Matemática para a Computação",
-        "credits": "4",
+        "credits": "6",
         "wcredits": "0",
         "summary": "Discurso matemático: leitura e escrita matemática. Estratégias de demonstrações. Princípio da indução finita. Sequências, somas, recorrências e contagem. Algoritmo de Euclides. Divisibilidade nos inteiros. Sistemas de numeração. MDC e MMC. Teorema de Bézout. Teorema fundamental da aritmética. Congruências. O anel dos inteiros módulo m. Os corpos Zp. Relações de equivalência, conjunto quociente, definição de funções e operações no conjunto quociente. Ordem, fecho transitivo de relações. Conjuntos infinitos.",
         "dependencies": []
@@ -1333,7 +1333,7 @@
     {
         "code": "BIB0142",
         "name": "Materia X",
-        "credits": "4",
+        "credits": "14",
         "wcredits": "0",
         "summary": "Breve digressão histórica. Cálculo proposicional. Fórmulas tautológicas, contra-válidas e     indeterminadas. Redução do número de conectivos. Problema de Post. Álgebra dos interruptores. Argumentos     válidos. Teorema da dedução. Axiomatização do cálculo proposicional. Cálculo de predicados. Quantificadores.     Fórmulas. Argumentos. Axiomatização do cálculo de predicados de 1 ordem. Noção sobre teorias formalizadas.",
         "dependencies": []

@@ -23,7 +23,7 @@ class IOManager extends Component {
     const blob = new Blob([JSON.stringify(payload)], {
       type: 'text/plain;charset=utf-8',
     })
-    saveAs(blob, 'bcc_export.ygg')
+    saveAs(blob, 'mycelium_export.json')
   }
 
   importData = rawData => {

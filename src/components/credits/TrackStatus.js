@@ -3,11 +3,6 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import withClasses from '../providers/withClasses'
-// import teoria from '../../tracks/teoria'
-// import sistemas from '../../tracks/sistemas'
-// import escience from '../../tracks/escience'
-// import ia from '../../tracks/ia'
-// TODO - add bio tracks
 import nucleobasico from '../../tracks/nucleobasico'
 import bachareladoobrigatorias from '../../tracks/bachareladoobrigatorias'
 import bachareladoeletivas from '../../tracks/bachareladoeletivas'
@@ -17,11 +12,6 @@ import licenciaturalivres from '../../tracks/licenciaturalivres'
 import { validateTrack } from '../../definitions/validation'
 
 const TrackStatus = ({ doneClasses, customBoxClasses }) => {
-  // const validTeoria = validateTrack(teoria, doneClasses, customBoxClasses)
-  // const validSistemas = validateTrack(sistemas, doneClasses, customBoxClasses)
-  // const validEscience = validateTrack(escience, doneClasses, customBoxClasses)
-  // const validIa = validateTrack(ia, doneClasses, customBoxClasses)
-  // TODO - add bio tracks
   const validNucleobasico = validateTrack(nucleobasico, doneClasses, customBoxClasses)
   const validBachareladoobrigatorias = validateTrack(bachareladoobrigatorias, doneClasses, customBoxClasses)
   const validBachareladoeletivas = validateTrack(bachareladoeletivas, doneClasses, customBoxClasses)

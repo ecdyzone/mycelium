@@ -138,7 +138,8 @@ ou mudo o código ou uso a versão anterior do código
 - check if everything is ok
 - aesthetics adjustments (icons)
 - validation checks (number of credits, classes information, etc)
-- matrusp export function
+- mycelium export - dizer que a pessoa pode deixar guardado no drive dela, e só importar depois, em qualquer computador ou celular (apesar de ficar salvo nos cookies)
+- matrusp export function - o mesmo
 - turn github pages ON
 
 
@@ -147,3 +148,11 @@ ajustar discplinas
 - extensão como obrigatória
 - 0410200 ATPEB como disciplina livre da licenciatura? isso continua existindo? ver guia da CG
 
+
+
+
+o que falta
+- validation checkboxes eletivas e livres (estão sempre ON, mudar isso)
+- verde claro demais
+- reports
+- crawler
