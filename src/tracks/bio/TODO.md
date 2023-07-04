@@ -179,3 +179,9 @@ return str.concat(text_begin, text_middle, text_end)
 ```
 
 e essa string é o que será escrita
+
+
+
+### validation
+
+CreditsManager.js chama o filter via DoneClasses usando o tipo de disciplina FreeElectives & MandatoryClasses

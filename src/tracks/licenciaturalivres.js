@@ -2,7 +2,7 @@ import { BoxTypes, ClasseTypes } from '../definitions/constants';
 
 export default {
   description:
-    'Devem ser cursados 20 créditos-aula de disciplinas de qualquer unidade da USP e podem ser cursadas a qualquer momento da graduação, mesmo antes de abrir o núcleo avançado. As disciplinas exibidas aqui são apenas as que possuem reserva de vagas pro IB. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa.',
+    'Devem ser cursados 20 créditos-aula de disciplinas de qualquer unidade da USP e podem ser cursadas a qualquer momento da graduação, mesmo antes de abrir o núcleo avançado. As disciplinas exibidas aqui são apenas as que possuem reserva de vagas pro IB. OBS: Uma optativa eletiva/livre considerada no Bacharelado não poderá ser considerada na Licenciatura, e vice-versa. INFORMAÇÃO A CONFIRMAR: o oferecimento das disciplinas livres é em períodos alternados. Então se uma disciplina foi oferecida em 2023 no 1 semestre de manhã ou tarde, provavelmente ela será oferecida de noite no 1 semestre de 2024.',
   boxes: {
     center: [],
     left: [
