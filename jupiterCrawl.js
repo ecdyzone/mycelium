@@ -1,8 +1,9 @@
 require = require('esm')(module)
 const fs = require('fs')
 const phantom = require('phantom')
-const cheerioAdv = require('cheerio-advanced-selectors')
-const cheerio = cheerioAdv.wrap(require('cheerio'))
+const cheerio = require('cheerio')
+// const cheerioAdv = require('cheerio-advanced-selectors')
+// const cheerio = cheerioAdv.wrap(require('cheerio'))
 
 // const geral = require('./src/tracks/geral').default
 // const teoria = require('./src/tracks/teoria').default
@@ -21,6 +22,7 @@ const grabClassesFromBoxes = boxes =>
   boxes.reduce((acc, cur) => [...acc, ...cur.classes], [])
 
 const grabClassesFromTrack = track => [
+  ...grabClassesFromBoxes(track.boxes.center),
   ...grabClassesFromBoxes(track.boxes.left),
   ...grabClassesFromBoxes(track.boxes.right),
 ]
@@ -36,11 +38,12 @@ const grabClassesFromTrack = track => [
       // ...grabClassesFromTrack(ia),
       // TODONE - add bio tracks
       ...grabClassesFromTrack(nucleobasico),
-      ...grabClassesFromTrack(bachareladoobrigatorias),
-      ...grabClassesFromTrack(bachareladoeletivas),
-      ...grabClassesFromTrack(bachareladolivres),
-      ...grabClassesFromTrack(licenciaturaobrigatorias),
-      ...grabClassesFromTrack(licenciaturalivres),
+      // TODOING - testing crawler only with nucleobasico
+      // ...grabClassesFromTrack(bachareladoobrigatorias),
+      // ...grabClassesFromTrack(bachareladoeletivas),
+      // ...grabClassesFromTrack(bachareladolivres),
+      // ...grabClassesFromTrack(licenciaturaobrigatorias),
+      // ...grabClassesFromTrack(licenciaturalivres),
     ])
   )
 
