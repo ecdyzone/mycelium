@@ -193,6 +193,8 @@ delete phantom line in package.json
 
 # NODERESET
 
+> add no package.json como um script
+
 npm cache clean --force
 rm -rf node_modules .husky .next package_lock.json
 npm install
