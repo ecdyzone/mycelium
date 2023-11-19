@@ -1,4 +1,5 @@
 import { BoxTypes, ClasseTypes } from '../definitions/constants';
+// let { BoxTypes, ClasseTypes } = require('../definitions/constants')
 
 export default {
   description:

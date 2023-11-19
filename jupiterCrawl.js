@@ -2,8 +2,6 @@ require = require('esm')(module)
 const fs = require('fs')
 const puppeteer = require('puppeteer')
 const cheerio = require('cheerio')
-// const cheerioAdv = require('cheerio-advanced-selectors')
-// const cheerio = cheerioAdv.wrap(require('cheerio'))
 
 // const geral = require('./src/tracks/geral').default
 // const teoria = require('./src/tracks/teoria').default
@@ -46,7 +44,7 @@ const grabClassesFromTrack = track => [
   //     // ...grabClassesFromTrack(licenciaturalivres),
   //   ])
   // )
-  const allClasses = Array.from("a")
+  const allClasses = ["GSA0289"]
 
   var remaining = allClasses.length
   var fullClasses = []
@@ -58,7 +56,7 @@ const grabClassesFromTrack = track => [
     // - a visible browser (`headless: false` - easier to debug because you'll see the browser in action)
     // - no default viewport (`defaultViewport: null` - website page will in full width and height)
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       defaultViewport: null,
       args: ['--disable-gpu']
     });
@@ -141,11 +139,15 @@ const grabClassesFromTrack = track => [
 })()
 
 const fetchDependencies = async (page, code) => {
-  await page.open(
-    // `https://uspdigital.usp.br/jupiterweb/listarCursosRequisitos?coddis=${code}`
-    "file:///home/camu/GSA.html"
-  )
-  const content = await page.property('content')
+
+  await page.goto("file:///home/camu/GSA.html", {
+  // await page.goto(`https://uspdigital.usp.br/jupiterweb/listarCursosRequisitos?coddis=${code}`, {
+    waitUntil: "domcontentloaded",
+  });
+ 
+  const content = await page.content();
+
+
   const $ = cheerio.load(content)
   const dependencies = []
 
@@ -162,7 +164,7 @@ const fetchDependencies = async (page, code) => {
     $(el)
       .text()
       .trim()
-      .includes('45052')
+      .includes('41012')
   )
 
   if (!depsRow.length) return dependencies
