@@ -1,6 +1,6 @@
 require = require('esm')(module)
 const fs = require('fs')
-const phantom = require('phantom')
+const puppeteer = require('puppeteer')
 const cheerio = require('cheerio')
 // const cheerioAdv = require('cheerio-advanced-selectors')
 // const cheerio = cheerioAdv.wrap(require('cheerio'))
@@ -29,36 +29,59 @@ const grabClassesFromTrack = track => [
 
 ; (async function () {
 
-  const allClasses = Array.from(
-    new Set([
-      // ...grabClassesFromTrack(geral),
-      // ...grabClassesFromTrack(teoria),
-      // ...grabClassesFromTrack(escience),
-      // ...grabClassesFromTrack(sistemas),
-      // ...grabClassesFromTrack(ia),
-      // TODONE - add bio tracks
-      ...grabClassesFromTrack(nucleobasico),
-      // TODOING - testing crawler only with nucleobasico
-      // ...grabClassesFromTrack(bachareladoobrigatorias),
-      // ...grabClassesFromTrack(bachareladoeletivas),
-      // ...grabClassesFromTrack(bachareladolivres),
-      // ...grabClassesFromTrack(licenciaturaobrigatorias),
-      // ...grabClassesFromTrack(licenciaturalivres),
-    ])
-  )
+  // const allClasses = Array.from(
+  //   new Set([
+  //     // ...grabClassesFromTrack(geral),
+  //     // ...grabClassesFromTrack(teoria),
+  //     // ...grabClassesFromTrack(escience),
+  //     // ...grabClassesFromTrack(sistemas),
+  //     // ...grabClassesFromTrack(ia),
+  //     // TODONE - add bio tracks
+  //     ...grabClassesFromTrack(nucleobasico),
+  //     // TODOING - testing crawler only with nucleobasico
+  //     // ...grabClassesFromTrack(bachareladoobrigatorias),
+  //     // ...grabClassesFromTrack(bachareladoeletivas),
+  //     // ...grabClassesFromTrack(bachareladolivres),
+  //     // ...grabClassesFromTrack(licenciaturaobrigatorias),
+  //     // ...grabClassesFromTrack(licenciaturalivres),
+  //   ])
+  // )
+  const allClasses = Array.from("a")
 
   var remaining = allClasses.length
   var fullClasses = []
   for (const code of allClasses) {
     console.log(`Buscando materia ${code}...`)
-    const instance = await phantom.create()
-    const page = await instance.createPage()
 
-    await page.open(
-      `https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=${code}`
-    )
-    const content = await page.property('content')
+
+    // Start a Puppeteer session with:
+    // - a visible browser (`headless: false` - easier to debug because you'll see the browser in action)
+    // - no default viewport (`defaultViewport: null` - website page will in full width and height)
+    const browser = await puppeteer.launch({
+      headless: false,
+      defaultViewport: null,
+      args: ['--disable-gpu']
+    });
+  
+    // Open a new page
+    const page = await browser.newPage();
+  
+    // On this new page:
+    // - open the "http://quotes.toscrape.com/" website
+    // - wait until the dom content is loaded (HTML is ready)
+    
+    await page.goto("file:///home/camu/BIO0307.html", {
+    // await page.goto(`https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=${code}`, {
+      waitUntil: "domcontentloaded",
+    });
+  
+    const content = await page.content();
+      
     const $ = cheerio.load(content)
+
+
+
+
     const headerTable = $(
       '#layout_conteudo form[name=form1] table tr table:eq(2)'
     )
@@ -102,7 +125,7 @@ const grabClassesFromTrack = track => [
     const dependencies = await fetchDependencies(page, code)
 
     console.log(`Finalizando ${code}...`)
-    instance.exit()
+    await browser.close();
 
     remaining -= 1
     console.log(`Faltam ${remaining}...`)
@@ -111,14 +134,16 @@ const grabClassesFromTrack = track => [
   }
 
   fs.writeFileSync(
-    './src/definitions/allclasses.json',
+    // './src/definitions/allclasses.json',
+    './src/definitions/allclasses-test.json',
     JSON.stringify(fullClasses, null, 4)
   )
 })()
 
 const fetchDependencies = async (page, code) => {
   await page.open(
-    `https://uspdigital.usp.br/jupiterweb/listarCursosRequisitos?coddis=${code}`
+    // `https://uspdigital.usp.br/jupiterweb/listarCursosRequisitos?coddis=${code}`
+    "file:///home/camu/GSA.html"
   )
   const content = await page.property('content')
   const $ = cheerio.load(content)

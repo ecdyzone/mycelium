@@ -180,6 +180,16 @@ npm audit
 npm audit fix --force
 
 
+fiz muitas atualizações com breaking changes
+
+
+
+replacing phantom with puppeteer
+
+npm install --save puppeteer
+delete phantom line in package.json
+
+
 
 # NODERESET
 
