@@ -1,10 +1,10 @@
 # resumo
 
 ideal até 30-nov
-1. fazer build funcionar (testar um clone yggdrasil e build lá ver se funciona)
-2. crawlers (o original e um mais simples) pra gerar json com disciplinas
-3. turn github pages ON
-4. validations
+OK. fazer build funcionar (testar um clone yggdrasil e build lá ver se funciona)
+02. crawlers (o original e um mais simples) pra gerar json com disciplinas
+03. turn github pages ON
+04. validations
     - checkboxes eletivas e livres (estão sempre ON, mudar isso)
     - credits counting (triggers some actions)
 
@@ -33,21 +33,6 @@ https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=41&codcur=41012
     - materias e requisitos tem tags e classes bem diferentes, é facil diferenciar
 
 dá pra adicionar meus próprios shell scripts no package.json. e ai rodo com 'npm run comando'
-
-
-# testing versions and commits to get build done
-
-
-git checkout v0.1.0
-
-rm node_modules .husky .next package-lock.json
-npm cache clean --force
-
-nvm install v8
-nvm alias default v8.17.0
-npm install
-
-npm audit fix
 
 
 # future refactor

@@ -12,7 +12,7 @@ Ele também gera o relatório de provável formando, ao se completarem os crédi
 
 Basta clonar o repositório, instalar as dependências com `npm install` e depois ligar o servidor com `npm start`. Você precisa ter o Node.js instalado para que esses comandos funcionem. Depois disso, basta entrar em `localhost:3000` no seu browser.
 
-A versão ideal do Node.js para rodar os comandos é a v8. Utilize o utilitário `nvm` para trocar facilmente entre versões.
+A versão ideal do Node.js para rodar os comandos é a v21.2.0. Utilize o utilitário `nvm` para trocar facilmente entre versões.
 
 Exemplo de script:
 ```bash
