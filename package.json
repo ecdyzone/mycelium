@@ -1,7 +1,7 @@
 {
   "name": "mycelium",
   "version": "1.0.0",
-  "homepage": "http://mumaral.github.io/mycelium",
+  "homepage": "http://ecdyzone.github.io/mycelium",
   "description": "Gerenciador do BCC",
   "private": true,
   "scripts": {
