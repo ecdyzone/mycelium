@@ -18,12 +18,15 @@ Exemplo de script:
 ```bash
 git clone http://github.com/ecdyzone/mycelium mycelium
 cd mycelium
-node -v && npm -v # garanta que nodejs e npm estejam instalados
+node -v && npm -v      # garanta que nodejs e npm estejam instalados
+nvm -v                 # nvm é opcional
+nvm use v21.2.0
 npm install
 npm run build
 npm start
 firefox localhost:3000
 ```
+
 
 ### Modificar trilhas
 

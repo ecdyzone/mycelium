@@ -55,3 +55,7 @@ achei algumas soluções usando
 - gh-pages -d {build,public,out}
 - edit package.json deploy script with touch .nojekyll
 - edit next.config.js
+
+
+atualmente to usando o github actions via .github/workflows/*.yml
+e isso gera o site estático. Falta só ativar o CSS
