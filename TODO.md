@@ -40,3 +40,18 @@ dá pra adicionar meus próprios shell scripts no package.json. e ai rodo com 'n
 Tem várias coisas feitas em js desnecessariamente
 tem um trecho de várias linhas que eu resolvi com um grep
 deixar só o frontend em js. E deixar o projeto mais clean, com menos dependencias pro que não seja frontend
+
+
+# ghpages
+
+AJUDA
+https://stackoverflow.com/questions/76122042/github-pages-enoent-no-such-file-or-directory-stat-next-build
+
+
+atualmente, o github pages tá servindo a página no link https://ecdyzone.github.io/mycelium/
+mas tudo estático. Sem CSS nem JS.
+
+achei algumas soluções usando
+- gh-pages -d {build,public,out}
+- edit package.json deploy script with touch .nojekyll
+- edit next.config.js
